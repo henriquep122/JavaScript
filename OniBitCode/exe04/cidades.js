@@ -1,8 +1,19 @@
-var nome = prompt("Favor informar o seu nome:")
-var resposta = prompt(`Olá ${nome}, ja visitou alguma cidade? `)
+const turista = prompt("Olá qual o seu nome? ")
+let cidades = ""
+let cont = 0
 
-while (resposta == sim) {
-  var resposta = prompt("ja visitou alguma outra cidade? ")
-  var nomeCidade = prompt("Qual o nome da cidade? ")
+let continuar = prompt(`${turista}, você visitou alguma cidade? (Sim/Não)`)
+
+while (continuar === "Sim") {
+  let cidade = prompt("Qual o nome da cidade visitada? ")
+  cidades += " - " + cidade + "\n"
+  cont++
+  continuar = prompt("Você visitou alguma outra cidade? (Sim/Não)")
 }
+
+alert(
+  `Turista: ${turista}
+  \nQuantidade de cidades visitadas: ${cont}
+  \nCidades Visitadas:\n${cidades}`
+)
 
