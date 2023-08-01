@@ -44,4 +44,16 @@ console.log(outros)
 const sociedade = hobbits.concat(outros, "Boromir")
 console.log(sociedade)
 
-//Substituição
+//Substituição dos Elementos (da pra substituir por nada)
+//splice
+const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf o Cinzento")
+console.log(sociedade)
+console.log(elementosRemovidos)
+
+sociedade.splice(4, 1, "Gandalf")
+
+//Iterar sobre os Elementos
+for (let i = 0; i < sociedade.length; i++){
+  const elemento = sociedade[i]
+  console.log(elemento + " se encontra na posição: " + i)
+}
