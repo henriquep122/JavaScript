@@ -6,8 +6,8 @@ let idade = anoAtual - anoNascimento
 
 if (idade >= 18 && idade < 70) {
   alert("Você tem idade para votar! (Voto obrigatório)")
-} if (idade >= 16 && idade <= 18 || idade >= 70) {
-    alert("Você tem idade para votar! (Voto não obrigatório)")
+} if (idade >= 16 && idade < 18 || idade >= 70) {
+    alert("Você pode votar! (Voto não obrigatório)")
 }  else {
     alert("Você não tem idade suficiente para votar!") 
   }
