@@ -1,0 +1,1 @@
+let anoNascimento = Number(prompt("Informe seu ano de nascimento: "))
